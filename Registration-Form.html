@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Registration Form</title>
+</head>
+<body>
+	<h1>Registration Form</h1>
+	<hr>
+	<br>
+
+	<form action="/submit.php" target="_self" method="POST">
+		
+		<h3>Basic Information :</h3>
+		
+		<label for="name">1. Name : </label>
+		<input type="text" name="name" id="name">
+
+		<br>
+		
+		<label for="name">2. Gender : </label>
+		
+		<br>
+		
+		<input type="radio" name="gender" id="male" value="male">
+		<label for="male">Male</label>
+
+		<input type="radio" name="gender" id="female" value="female">
+		<label for="female">Female</label>
+
+		<br>
+		
+		 <label for="dob">3. DoB :</label>
+		 <input type="date" id="dob" name="dob">
+		
+		<br>
+		
+		<!-- Dropdown/Select -->
+		<label for="religion">4. Religion : </label>
+		<select id="religion" name="religion">
+			<option value="Islam">Islam</option>
+			<option value="Chirstianity">Chirstianity</option>
+			<option value="Hinduism">Hinduism</option>
+			<option value="Buddhism">Buddhism</option>
+		</select>
+
+		<br>
+		
+		<label for="FathersName">5. Father's Name : </label>
+		<input type="text" name="FathersName" id="FathersName">
+
+		<br>
+		
+		<label for="MothersName">6. Mother's Name  : </label>
+		<input type="text" name="MothersName" id="MothersName">
+
+		<br>
+		
+		<h3>Contact Information :</h3>
+		
+		<label for="PresentAddress">1. Present Address : </label>
+		<input type="text" name="PresentAddress" id="PresentAddress">
+
+		<br>
+		
+		<label for="PermanentAddress">2. Permanent Address : </label>
+		<input type="text" name="Permanent Address" id="PermanentAddress">
+		
+		<br>
+		
+		 <label for="phone">3. Phone number:</label>
+		 <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"> 
+		 
+		<br>
+		
+		 <label for="email">4. Email:</label>
+		 <input type="email" id="email" name="email"> 
+		
+		<br>
+		
+		<a href="https://www.w3schools.com/html/html_form_input_types.asp" target="_blank">5. Personal Website Link</a>
+		<br>
+		
+		<h3>Academic Information :</h3>
+		
+		 <label for="SSCYear">1. SSC Year:</label>
+		 <input type="number" id="SSCYear" name="SSCYear"> 
+		
+		<br>
+		
+		<label for="SSCInstitution">2. SSC Institution : </label>
+		<input type="text" name="SSCInstitution" id="SSCInstitution">
+
+		<br>
+		
+		<label for="HSCYear">3. HSC Year:</label>
+		<input type="number" id="HSCYear" name="HSCYear"> 
+		
+		<br>
+		
+		<label for="HSCInstitution">4. HSC Institution : </label>
+		<input type="text" name="HSCInstitution" id="HSCInstitution">
+
+		<br>
+		
+		<br>
+		<br>
+		<input type="submit" value="Submit">
+
+		<!-- Button submit -->
+		<!-- <button type="submit">Submit</button> -->
+
+	</form>
+
+</body>
+</html>
